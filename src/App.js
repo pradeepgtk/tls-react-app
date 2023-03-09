@@ -15,7 +15,7 @@ function App() {
       headers: myHeaders,
       body: raw
     };
-    fetch("http://localhost:8000/data", requestOptions)
+    fetch("https://tls-node-server-osf3.onrender.com", requestOptions)
       .then((response) => response.json())
       .then((result) => setData(result))
       .catch((error) => console.log("error", error));
